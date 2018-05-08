@@ -1,0 +1,106 @@
+/* fonts */
+$montserrat: "Montserrat", sans-serif;
+$proximanova: "Proxima Nova", Georgia, sans-serif;
+
+body {
+	font-family: $montserrat;
+	font-size: 15px;
+	font-weight: 300;
+	color: #828181;
+ 	max-width: 1170px;
+	width: 100%;
+	margin: 0 auto;
+	background-color: #ffffff;
+}
+
+a {
+	color: #ffffff;
+	font-family: $proximanova;
+	font-size: 16px;
+	font-weight: 400;
+	text-decoration: none;
+	transition: all 0.2s ease;
+	&:hover {
+		color: #ffffff;
+		font-weight: 700;
+		text-decoration: none;
+	}
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* headings */
+%h1 {
+	font-family: $montserrat;
+	font-weight: 300;
+	font-size: 21px;
+	text-transform: uppercase;
+	letter-spacing: 3.2px;
+	line-height: 1.1em;
+	display: inline;
+}
+%h2 {
+	font-family: $montserrat;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.1em;
+	display: inline;
+}
+
+.h1-gray {
+	@extend %h1;
+	color: #828181;
+}
+.h1-green {
+	@extend %h1;
+	color: #207b20;
+}
+.h2-gray {
+	@extend %h1;
+	color: #b7b3b3;
+}
+.h2-green {
+	@extend %h2;
+	color: #2b9b2b;
+}
+
+/* buttons */
+.button {
+	border: none;
+	outline: 0;
+	&:hover{
+		filter: brightness(0.9);
+		transform: scale(1.05);
+		-webkit-transform: scale(1.05);
+		-moz-transform: scale(1.05);
+		cursor: pointer;
+	}
+	&:focus {
+		border: none;
+		outline: 0;
+	}
+	&::-moz-focus-inner {
+		border: none;
+	}
+	&:active {
+		transform: scale(0.95);
+		-webkit-transform: scale(0.95);
+		-moz-transform: scale(0.95);
+		outline: 0;
+		border: none;
+	}
+}
+.btn-big {
+	width: 208px;
+	height: 47px;
+	background-color: #54d154;
+	color: #ffffff;
+	font-family: $proximanova;
+	font-size: 22px;
+	font-weight: 400;
+	text-transform: uppercase;
+	border-radius: 30px;
+}
