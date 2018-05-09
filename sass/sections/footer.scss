@@ -1,0 +1,16 @@
+footer {
+	height: 35px;
+	background-color: #111111;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #ffffff;
+	font-family: $proximanova;
+	font-size: 12px;
+	font-weight: 400;
+	a {
+		font-size: inherit;
+		color: #bcbcbc;
+	}
+}

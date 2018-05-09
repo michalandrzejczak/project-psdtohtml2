@@ -1,0 +1,27 @@
+#page-seen {
+	min-height: 140px;
+	background-color: #222222;
+
+	.seen-heading {
+		font-size: 16px;
+		font-weight: 500;
+		margin: 40px 0 15px 0;
+		&::after {
+			content: "";
+			display: block;
+			margin: 0 auto; 
+			width: 18%;
+			padding-top: 5px;
+			border-bottom: 2px solid #101010;
+		}
+	}
+	img {
+		margin: 25px 10px;
+		transition: all 0.4s ease;
+		-moz-transition: all 0.4s ease;
+		-webkit-transition: all 0.4s ease;
+		&:hover {
+			opacity: 0.5;
+		}
+	}
+}
