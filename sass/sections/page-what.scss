@@ -18,6 +18,8 @@
 		&:hover {
 			img {
 				transform: rotate(10deg);
+				-moz-transform: rotate(10deg);
+				-webkit-transform: rotate(10deg);
 			}
 		}
 	}
@@ -32,6 +34,8 @@
 		border-radius: 30px;
 		img {
 			transition: all 0.2s ease;
+			-moz-transition: all 0.2s ease;
+			-webkit-transition: all 0.2s ease;
 		}
 	}
 	.feature-heading {
