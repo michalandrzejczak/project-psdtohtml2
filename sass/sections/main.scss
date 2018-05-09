@@ -59,6 +59,10 @@ img {
 	@extend %h1;
 	color: #207b20;
 }
+.h1-lgray {
+	@extend %h1;
+	color: #dddddd;
+}
 .h2-gray {
 	@extend %h2;
 	color: #b7b3b3;
