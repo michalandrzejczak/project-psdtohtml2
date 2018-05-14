@@ -42,13 +42,12 @@
 			&:active {
 				background-color: #7bce7b;
 			}
-			&:focus { /*temporary solution - js needed here */
+			&:focus {
 				background-color: #2b9b2b;
 				color: #fff;
 			}
 		}
 	}
-	
 	.work-gallery {
 		img {
 			margin: 15px;
@@ -60,7 +59,12 @@
 			}
 		}
 	}
-	
+	.photo-hide {
+		display: none;
+	}
+	.photo-show {
+		display: inline-block;
+	}
 	.work-btn {
 		margin: 45px auto;
 		display: inline-flex;
@@ -78,5 +82,11 @@
 		i {
 			font-size: 12px;
 		}
+	}
+}
+@media screen and (max-width:383px) {
+	.gallery-btn {
+		font-size: 14px !important;
+		padding: 8px 8px !important;
 	}
 }
